@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibre One — Réseaux de fibre optique</title>
+    <meta name="description" content="Raccordement, maintenance et dépannage des réseaux de fibre optique en Suisse." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Fibre One">
+          <!-- Placeholder logo text (zameni SVG/PNG logom kad budeš imao) -->
+          <span class="brand-text">
+           <img
+                src="assets/fibreone-logo.png"
+                alt="Techniciens travaillant sur des équipements réseau fibre"
+                loading="lazy"
+                height="40"
+              />
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+
+          <ul class="nav-list" id="navList">
+            <li><a href="#home" class="nav-link is-active" data-nav>ACCUEIL</a></li>
+            <li><a href="#about" class="nav-link" data-nav>À PROPOS</a></li>
+            <li><a href="#services" class="nav-link" data-nav>SERVICES</a></li>
+            <li><a href="#team" class="nav-link" data-nav>ÉQUIPE</a></li>
+            <li><a href="#contact" class="nav-link nav-pill" data-nav>CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="lang">
+          <button class="lang-btn" id="langBtn" type="button" aria-label="Switch language">
+            FR <span class="chev">▼</span>
+          </button>
+          <div class="lang-menu" id="langMenu" role="menu" aria-label="Language menu">
+            <button type="button" class="lang-item" data-lang="fr" role="menuitem">FR</button>
+            <button type="button" class="lang-item" data-lang="de" role="menuitem">DE</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 class="hero-title">
+              VOTRE <span class="accent">PARTENAIRE FIABLE</span>
+              POUR LES RÉSEAUX
+              DE <span class="accent">FIBRE OPTIQUE</span>
+            </h1>
+
+            <p class="hero-sub">
+              Raccordement, maintenance et dépannage de réseaux fibre optique réalisés
+              avec précision, expertise et fiabilité.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">CONTACTEZ-NOUS</a>
+              <a class="btn btn-ghost" href="#services">DÉCOUVRIR NOS SERVICES</a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="circle-frame">
+              <!-- Zameni src svojom slikom -->
+              <img
+                src="assets/hero.jpg"
+                alt="Techniciens travaillant sur des équipements réseau fibre"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About (light band) -->
+      <section class="band" id="about">
+        <div class="container">
+          <h2 class="section-title underline">À PROPOS</h2>
+          <p class="section-lead">
+            Fibre One Sàrl est une entreprise basée à Crissier, spécialisée dans le raccordement,
+            la maintenance et le dépannage des réseaux de fibre optique en Suisse.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services / Activities -->
+      <section class="section section-activities" id="services">
+        <div class="container">
+          <h2 class="section-title underline">NOS ACTIVITÉS</h2>
+          <p class="section-lead">
+            Notre équipe propose des solutions complètes dans le domaine des télécommunications
+            par fibre optique :
+          </p>
+
+          <div class="activities">
+            <!-- Item 1 -->
+            <article class="activity">
+              <div class="activity-text">
+                <h3>RACCORDEMENT<br />ET SOUDURE<br />DE CÂBLES<br />À FIBRE OPTIQUE</h3>
+                <p>
+                  Installation, raccordement et soudure de câbles fibre optique selon les standards
+                  techniques les plus exigeants.
+                </p>
+              </div>
+              <div class="activity-media">
+                <div class="circle-frame circle-frame--small">
+                  <img src="assets/service-1.png" alt="Soudure de fibre optique" loading="lazy" />
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 2 (swap) -->
+            <article class="activity activity--swap">
+              <div class="activity-text">
+                <h3>DÉPANNAGE<br />ET RÉSOLUTION<br />DE PANNES</h3>
+                <p>
+                  Intervention rapide et efficace pour l’identification et la résolution des
+                  dysfonctionnements sur les réseaux fibre.
+                </p>
+              </div>
+              <div class="activity-media">
+                <div class="circle-frame circle-frame--small">
+                  <img src="assets/service-2.png" alt="Dépannage réseau fibre" loading="lazy" />
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="activity">
+              <div class="activity-text">
+                <h3>MAINTENANCE<br />ET ENTRETIEN<br />DES RÉSEAUX</h3>
+                <p>
+                  Maintenance préventive et corrective afin de garantir la performance,
+                  la fiabilité et la durabilité des installations.
+                </p>
+              </div>
+              <div class="activity-media">
+                <div class="circle-frame circle-frame--small">
+                  <img src="assets/service-3.png" alt="Maintenance réseau fibre" loading="lazy" />
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 4 (swap) -->
+            <article class="activity activity--swap">
+              <div class="activity-text">
+                <h3>INTERVENTION<br />SUR DES RÉSEAUX<br />EXISTANTS<br />ET NOUVEAUX</h3>
+                <p>
+                  Travail sur des réseaux en exploitation ainsi que sur des projets neufs,
+                  en collaboration avec les différents acteurs du chantier.
+                </p>
+              </div>
+              <div class="activity-media">
+                <div class="circle-frame circle-frame--small">
+                  <img src="assets/service-4.png" alt="Intervention sur réseaux" loading="lazy" />
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team (placeholder) -->
+      <section class="section" id="team">
+        <div class="container">
+          <h2 class="section-title underline">ÉQUIPE</h2>
+          <p class="section-lead">
+            Une petite équipe expérimentée, engagée sur la qualité, la responsabilité et la confiance.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section section-contact" id="contact">
+        <div class="container">
+          <h2 class="section-title underline">CONTACTEZ-NOUS</h2>
+
+          <div class="contact-grid">
+            <div class="contact-copy">
+              <h3>Vous avez un projet ou besoin d’un partenaire fiable pour vos réseaux de fibre optique&nbsp;?</h3>
+              <p>
+                N’hésitez pas à nous contacter. Nous serons ravis d’échanger avec vous et d’étudier votre demande.
+              </p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <label class="sr-only" for="name">Nom et prénom</label>
+              <input id="name" name="name" type="text" placeholder="Nom et prénom" required />
+
+              <label class="sr-only" for="email">Adresse e-mail</label>
+              <input id="email" name="email" type="email" placeholder="Adresse e-mail" required />
+
+              <label class="sr-only" for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Message..." required></textarea>
+
+              <button class="btn btn-primary btn-wide" type="submit">ENVOYER LE MESSAGE</button>
+
+              <p class="form-note" id="formNote" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div>
+            <img 
+            src="assets/fibreone-logo-white.png" 
+            alt="FIBRE ONE SARL" 
+            loading="lazy"
+            height="50"/>
+            <!-- <div class="footer-name"><strong>FIBRE</strong> ONE</div> -->
+            <div class="footer-values">Qualité • Responsabilité • Confiance</div>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <small>© <span id="year"></span> FibreOne Sàrl — Tous droits réservés</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
