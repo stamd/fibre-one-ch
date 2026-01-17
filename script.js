@@ -48,6 +48,7 @@ const revealSelectors = [
   ".circle-frame",
   ".section-title",
   ".section-lead",
+  ".why-card",
   ".activity",
   ".activity-text h3",
   ".activity-text p",
@@ -59,6 +60,14 @@ const revealSelectors = [
 
 const revealEls = Array.from(document.querySelectorAll(revealSelectors.join(",")));
 revealEls.forEach((el) => el.classList.add("reveal"));
+
+// Immediately reveal hero content on page load
+const heroEls = Array.from(
+  document.querySelectorAll(".hero-title, .hero-sub, .hero-actions, .hero-media, .hero-media .circle-frame")
+);
+heroEls.forEach((el) => {
+  el.classList.add("reveal", "reveal--side", "is-visible");
+});
 
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
