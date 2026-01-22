@@ -8,10 +8,16 @@ $("#year").textContent = new Date().getFullYear();
 // Mobile nav
 const navToggle = $("#navToggle");
 const navList = $("#navList");
+const navClose = $("#navClose");
 
 navToggle?.addEventListener("click", () => {
   const isOpen = navList.classList.toggle("is-open");
   navToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+navClose?.addEventListener("click", () => {
+  navList.classList.remove("is-open");
+  navToggle?.setAttribute("aria-expanded", "false");
 });
 
 // Close nav on click (mobile)
