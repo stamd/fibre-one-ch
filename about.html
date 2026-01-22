@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibre One -- A propos</title>
+    <meta name="description" content="FibreOne Sarl, entreprise specialisee dans les reseaux de fibre optique en Suisse." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#top" aria-label="Fibre One">
+          <span class="brand-text">
+            <img
+              src="assets/fibreone-logo.png"
+              alt="Techniciens travaillant sur des equipements reseau fibre"
+              loading="lazy"
+              height="40"
+            />
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+
+          <ul class="nav-list" id="navList">
+            <li class="nav-close">
+              <button class="nav-close-btn" id="navClose" type="button" aria-label="Close menu">X</button>
+            </li>
+            <li><a href="index.html#home" class="nav-link" data-nav>ACCUEIL</a></li>
+            <li><a href="about.html" class="nav-link is-active" data-nav>A PROPOS</a></li>
+            <li><a href="index.html#services" class="nav-link" data-nav>SERVICES</a></li>
+            <li><a href="team.html" class="nav-link" data-nav>EQUIPE</a></li>
+            <li><a href="contact.html" class="nav-link nav-pill" data-nav>CONTACT</a></li>
+            <li class="nav-lang">
+              <button type="button" class="lang-item" data-lang="fr">FR</button>
+              <button type="button" class="lang-item" data-lang="de">DE</button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="lang">
+          <button class="lang-btn" id="langBtn" type="button" aria-label="Switch language">
+            FR <span class="chev">v</span>
+          </button>
+          <div class="lang-menu" id="langMenu" role="menu" aria-label="Language menu">
+            <button type="button" class="lang-item" data-lang="fr" role="menuitem">FR</button>
+            <button type="button" class="lang-item" data-lang="de" role="menuitem">DE</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-about">
+        <div class="container">
+          <h1 class="section-title underline">FibreOne Sarl</h1>
+          <p class="about-tagline">Votre partenaire fiable pour les reseaux de fibre optique</p>
+
+          <div class="about-content">
+            <p>
+              FibreOne Sarl est une entreprise specialisee, basee a Crissier, en Suisse, active dans le
+              raccordement, la maintenance et le depannage des reseaux de fibre optique. En tant que
+              petite entreprise, mais dotee d'une grande experience, nous sommes fiers de la qualite
+              de nos services et des relations durables que nous construisons avec nos clients.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h2>Nos activites</h2>
+            <p>
+              Notre equipe propose des solutions completes dans le domaine des telecommunications par
+              fibre optique :
+            </p>
+            <ul class="about-list">
+              <li>Raccordement et soudure de cables a fibre optique</li>
+              <li>Depannage et resolution de pannes</li>
+              <li>Maintenance et entretien des reseaux</li>
+              <li>Intervention sur des reseaux existants et nouveaux</li>
+            </ul>
+            <p>Quel que soit le projet, nous abordons chaque mission avec serieux, precision et professionnalisme.</p>
+          </div>
+
+          <div class="about-block">
+            <h2>Notre experience</h2>
+            <p>
+              FibreOne Sarl s'appuie sur une equipe de 10 specialistes hautement qualifies, disposant de
+              nombreuses annees d'experience dans le domaine des reseaux de fibre optique. Notre
+              savoir-faire, combine a une formation continue, nous permet de repondre efficacement a tous
+              les defis techniques.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h2>Nos clients avant tout</h2>
+            <p>
+              La satisfaction de nos clients est notre priorite absolue. Nous mettons un point d'honneur
+              a fournir un service fiable, a respecter les delais et a etre un partenaire sur lequel vous
+              pouvez compter. Votre confiance est la base de notre succes.
+            </p>
+            <p>
+              Nous sommes convaincus qu'un travail de qualite repose sur des collaborateurs satisfaits.
+              C'est pourquoi nous attachons une grande importance au respect, a la motivation et a une
+              remuneration equitable de nos employes. Ce n'est qu'en garantissant le bien-etre de notre
+              equipe que nous pouvons, en tant qu'entreprise, etre pleinement satisfaits des resultats
+              obtenus.
+            </p>
+          </div>
+
+          <p class="about-signoff">
+            FibreOne Sarl -- qualite, responsabilite et confiance. Si vous recherchez un partenaire fiable
+            pour vos projets de fibre optique en Suisse, FibreOne Sarl est votre meilleur choix.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div>
+            <img
+              src="assets/fibreone-logo-white.png"
+              alt="FIBRE ONE SARL"
+              loading="lazy"
+              height="50"
+            />
+            <div class="footer-values">LA VITESSE QUI VOUS CONNECTE</div>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <small>(c) <span id="year"></span> FibreOne Sarl -- Tous droits reserves</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
