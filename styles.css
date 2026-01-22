@@ -371,7 +371,7 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  gap: 26px;
+  gap: 10%;
 }
 
 .activity--swap {
@@ -420,10 +420,16 @@ img { max-width: 100%; display: block; }
 
 .contact-copy h3 {
   margin: 0 0 10px;
-  font-size: 18px;
+  font-size: 36px;
   line-height: 1.25;
+  color: var(--red);
+  text-align: right;
 }
-.contact-copy p { margin: 0; color: rgba(56,56,56,0.7); }
+.contact-copy p {
+  margin: 0;
+  color: rgba(56,56,56,0.7);
+  text-align: right;
+}
 
 .contact-form {
   background: var(--gray-1);
