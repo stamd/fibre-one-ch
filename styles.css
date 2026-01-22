@@ -369,6 +369,49 @@ img { max-width: 100%; display: block; }
   color: var(--dark);
 }
 
+/* Team */
+.section-team {
+  background: var(--white);
+}
+.team-grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+.team-card {
+  background: #f2efea;
+  border-radius: 16px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+.team-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--white);
+  margin: 0 auto 12px;
+  display: grid;
+  place-items: center;
+  box-shadow: inset 0 0 0 2px rgba(217, 7, 15, 0.2);
+}
+.team-avatar img {
+  width: 52px;
+  height: 52px;
+}
+.team-card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--dark);
+}
+.team-card p {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(56, 56, 56, 0.7);
+}
 /* Why Fibre One */
 .section-why {
   background: #f2efea;
@@ -567,6 +610,7 @@ img { max-width: 100%; display: block; }
   .circle-frame { margin: 18px 0 0; width: 300px; }
   .contact-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 760px) {
@@ -680,4 +724,5 @@ img { max-width: 100%; display: block; }
   }
   .activities { margin: 32px 0 0; }
   .why-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
 }
