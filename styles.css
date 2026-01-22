@@ -574,6 +574,13 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 760px) {
+  .site-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  body { padding-top: 72px; }
   .nav-toggle { display: inline-block; }
   .nav { margin-left: auto; }
   .nav-toggle {
