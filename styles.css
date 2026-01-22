@@ -189,14 +189,18 @@ img { max-width: 100%; display: block; }
 
 /* Hero */
 .hero {
-  padding: 54px 0 40px;
-  background: var(--white);
+  padding: 90px 0 80px;
+  background: linear-gradient(120deg, rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.2)),
+    url("assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white);
 }
 
 .hero-inner {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 44px;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -211,7 +215,7 @@ img { max-width: 100%; display: block; }
 
 .hero-sub {
   margin: 0 0 22px;
-  color: rgba(56, 56, 56, 0.7);
+  color: rgba(255, 255, 255, 0.85);
   max-width: 56ch;
 }
 
@@ -219,7 +223,17 @@ img { max-width: 100%; display: block; }
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
+.hero-copy {
+  text-align: right;
+  max-width: 540px;
+}
+.hero .btn-ghost {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.hero .btn-ghost:hover { border-color: rgba(255, 255, 255, 0.8); }
 
 .btn {
   display: inline-flex;
@@ -308,6 +322,11 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px 28px;
+}
+.section-actions {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
 }
 .why-card {
   background: #e6e2dd;
@@ -424,6 +443,7 @@ img { max-width: 100%; display: block; }
   line-height: 1.25;
   color: var(--red);
   text-align: right;
+  font-weight: 800;
 }
 .contact-copy p {
   margin: 0;
@@ -432,9 +452,7 @@ img { max-width: 100%; display: block; }
 }
 
 .contact-form {
-  background: var(--gray-1);
-  border: 1px solid rgba(217, 7, 15, 0.22);
-  border-radius: 18px;
+  border-radius: 10px;
   padding: 18px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
@@ -442,16 +460,16 @@ img { max-width: 100%; display: block; }
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  border-radius: 999px;
+  border-radius: 10px;
   border: 1px solid rgba(217, 7, 15, 0.25);
   padding: 12px 14px;
-  background: #f7f7f7;
+  background: var(--gray-1);
   outline: none;
   margin-bottom: 12px;
   font: inherit;
 }
 .contact-form textarea {
-  border-radius: 18px;
+  border-radius: 10px;
   resize: vertical;
   min-height: 140px;
 }
@@ -489,7 +507,7 @@ img { max-width: 100%; display: block; }
 
 /* Responsive */
 @media (max-width: 920px) {
-  .hero-inner { grid-template-columns: 1fr; }
+  .hero-inner { justify-content: flex-end; }
   .circle-frame { margin: 18px 0 0; width: 300px; }
   .contact-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

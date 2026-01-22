@@ -40,12 +40,34 @@ const setActive = () => {
 window.addEventListener("scroll", setActive);
 setActive();
 
+// Hero parallax background
+const heroSection = $(".hero");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (heroSection && !prefersReducedMotion) {
+  let ticking = false;
+  const updateParallax = () => {
+    const offset = window.scrollY;
+    heroSection.style.backgroundPosition = `center ${offset * 0.35}px`;
+    ticking = false;
+  };
+
+  const onScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateParallax);
+      ticking = true;
+    }
+  };
+
+  window.addEventListener("scroll", onScroll);
+  updateParallax();
+}
+
 // Scroll reveal
 const revealSelectors = [
   ".hero-title",
   ".hero-sub",
   ".hero-actions",
-  ".circle-frame",
   ".section-title",
   ".section-lead",
   ".why-card",
@@ -63,7 +85,7 @@ revealEls.forEach((el) => el.classList.add("reveal"));
 
 // Immediately reveal hero content on page load
 const heroEls = Array.from(
-  document.querySelectorAll(".hero-title, .hero-sub, .hero-actions, .hero-media, .hero-media .circle-frame")
+  document.querySelectorAll(".hero-title, .hero-sub, .hero-actions")
 );
 heroEls.forEach((el) => {
   el.classList.add("reveal", "reveal--side", "is-visible");
