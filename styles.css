@@ -599,7 +599,7 @@ img { max-width: 100%; display: block; }
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 0;
     padding: 90px 18px 18px;
-    box-shadow: var(--shadow);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
     display: flex;
     transform: translateX(100%);
     opacity: 0;
@@ -621,12 +621,13 @@ img { max-width: 100%; display: block; }
     margin: -70px 0 12px;
   }
   .nav-close-btn {
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 0;
     background: transparent;
     color: var(--white);
+    font-size: 20px;
     font-weight: 700;
     cursor: pointer;
   }
