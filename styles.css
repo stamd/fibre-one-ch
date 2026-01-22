@@ -528,6 +528,9 @@ img { max-width: 100%; display: block; }
   padding-bottom: 40px;
   background: var(--gray-1);
 }
+.contact-page .section-contact {
+  background: var(--white);
+}
 .contact-grid {
   margin-top: 36px;
   display: grid;
@@ -548,6 +551,12 @@ img { max-width: 100%; display: block; }
   margin: 0;
   color: rgba(56,56,56,0.7);
   text-align: right;
+}
+.contact-phone {
+  color: var(--red);
+  font-weight: 800;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .contact-form {
