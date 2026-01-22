@@ -88,7 +88,7 @@ const heroEls = Array.from(
   document.querySelectorAll(".hero-title, .hero-sub, .hero-actions")
 );
 heroEls.forEach((el) => {
-  el.classList.add("reveal", "reveal--side", "is-visible");
+  el.classList.add("reveal", "reveal--up", "is-visible");
 });
 
 if ("IntersectionObserver" in window) {
