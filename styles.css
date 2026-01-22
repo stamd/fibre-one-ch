@@ -134,7 +134,7 @@ img { max-width: 100%; display: block; }
 .nav-link {
   text-decoration: none;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 12px;
   letter-spacing: 0.8px;
   color: var(--dark);
   opacity: 0.8;
@@ -144,12 +144,8 @@ img { max-width: 100%; display: block; }
 }
 .nav-link:hover { opacity: 1; }
 .nav-link.is-active { opacity: 1; }
+.nav-close { display: none; }
 
-.nav-pill {
-  background: transparent;
-  color: var(--dark);
-  padding: 10px 8px;
-}
 
 /* Lang dropdown */
 .lang { position: relative; }
@@ -634,7 +630,7 @@ img { max-width: 100%; display: block; }
     font-weight: 700;
     cursor: pointer;
   }
-  .nav-link { padding: 12px 14px; }
+  .nav-link { padding: 12px 14px; font-size: 24px; }
   .lang { display: none; }
   .nav-lang {
     display: flex;
