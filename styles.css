@@ -735,4 +735,8 @@ img { max-width: 100%; display: block; }
   .activities { margin: 32px 0 0; }
   .why-grid { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: 1fr; }
+  .contact-copy h3,
+  .contact-copy p {
+    text-align: center;
+  }
 }
